@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuitTangan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="w-full h-screen flex flex-col items-center justify-center gap-5"
+    >
+      <h1 class="text-lg sm:text-2xl font-bold">
+        Game Suit (Batu, Gunting, Kertas)
+      </h1>
+      <div
+        class="bg-slate-800 text-slate-100 p-4 flex flex-col items-center gap-5 w-4/5 rounded-xl drop-shadow-xl h-96 justify-center"
+      >
+        <div class="flex gap-5 justify-between">
+          <button
+            onclick="playGame(0)"
+            class="text-xl sm:text-3xl hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ease-in-out delay-70 duration-300 px-4 sm:px-8 py-3 sm:py-5 bg-slate-500 rounded-xl outline-2 ring ring-purple-500"
+          >
+            ✊
+          </button>
+          <button
+            onclick="playGame(1)"
+            class="text-xl sm:text-3xl hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ease-in-out delay-70 duration-300 px-4 sm:px-8 py-3 sm:py-5 bg-slate-500 rounded-xl outline-2 ring ring-purple-500"
+          >
+            ✌️
+          </button>
+          <button
+            onclick="playGame(2)"
+            class="text-xl sm:text-3xl hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ease-in-out delay-70 duration-300 px-4 sm:px-8 py-3 sm:py-5 bg-slate-500 rounded-xl outline-2 ring ring-purple-500"
+          >
+            🖐️
+          </button>
+        </div>
+
+        <div class="text-sm sm:text-lg font-semibold result" id="result"></div>
+        <div class="text-sm sm:text-lg font-semibold score" id="score"></div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
